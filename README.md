@@ -2,10 +2,7 @@
 
 @(筆記)[Haha|Markdown]
 
-**马克飞象**是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：
- 
-- **功能丰富** ：支持高亮代码块、*LaTeX* 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；
-- **深度整合** ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。
+Git指令豪簡單：
 
 -------------------
 ### 功能指令
@@ -45,8 +42,8 @@ git commit -m "comment"
 
 #### 加入遠端資料庫
 ```C++
-git push -u origin master
-git push origin local_master:global_master//推上不同分支名稱
+git push -u origin <local_branch>
+git push origin <local_branch:global_branch>//推上不同分支名稱
 
 -u : 紀錄要推上去的位置，下次只需要打git push
 ```
@@ -101,11 +98,8 @@ git remote add origin https://github.com/haha4ni/GitNote.git
 echo "# GitNote" >> README.md
 ```
 
+-------------------
+#### Reference
 
-
-[^demo]: 这是一个示例脚注。请查阅 [MultiMarkdown 文档](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#footnotes) 关于脚注的说明。 **限制：** 印象笔记的笔记内容使用 [ENML][5] 格式，基于 HTML，但是不支持某些标签和属性，例如id，这就导致`脚注`和`TOC`无法正常点击。
-
-
-  [1]: https://gitbook.tw/
-  [2]: 
-
+\[1]:  https://gitbook.tw/
+[2]:  
