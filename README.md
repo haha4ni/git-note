@@ -53,7 +53,10 @@ git push origin <local_branch:global_branch>//推上不同分支名稱
 
 #### 更新
 ```C++
+git pull
 
+pull等於兩個指令
+git fetch + git merge origin/master
 ```
 
 
