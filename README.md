@@ -1,8 +1,6 @@
 # Git指令懶人大補帖
 
-@(筆記)[Haha|Markdown]
-
-Git指令豪簡單：
+1、2、3，**Git**指令豪簡單。
 
 -------------------
 ### 功能指令
@@ -12,7 +10,7 @@ Git指令豪簡單：
 gitk  (只顯示自己)
 gitk --all  (顯示全部)
 ```
-#### 設定上傳名稱與Email
+#### 設定使用者名稱與Email
 ``` C++
 git config --global user.name "name"
 git config --global user.email "email"
@@ -44,11 +42,20 @@ git commit -m "comment"
 
 #### 加入遠端資料庫
 ```C++
+//git remote add origin <repository url>
+需要先定義origin位置
+
 git push -u origin <local_branch>
 git push origin <local_branch:global_branch>//推上不同分支名稱
 
 -u : 紀錄要推上去的位置，下次只需要打git push
 ```
+
+#### 更新
+```C++
+
+```
+
 
 -------------------
 ### 分支處理
@@ -80,8 +87,6 @@ git merge <branch>
 
 git branch -d <branch>
 刪除分支
-
-
 ```
 
 
@@ -107,4 +112,5 @@ echo "# GitNote" >> README.md
 #### Reference
 
 \[1]:  https://gitbook.tw/
+
 [2]:  
