@@ -9,7 +9,8 @@ Git指令豪簡單：
 
 #### 內建圖形化分支工具
 ``` C++
-gitk --all
+gitk  (只顯示自己)
+gitk --all  (顯示全部)
 ```
 #### 設定上傳名稱與Email
 ``` C++
@@ -27,6 +28,7 @@ git status
 #### 初始化
 使用`init`來建立新環境以及使用`clone`去拷貝遠端Repository
 ``` C++
+git init
 git clone <repository url>
 ```
 #### 加入暫存區
@@ -54,10 +56,13 @@ git push origin <local_branch:global_branch>//推上不同分支名稱
 git checkout <branch>
 切換分支
 git checkout -b <branch>
--b : 如果沒有就創建新分支
+-b : 如果沒有就創建新分支+進入
 
 git branch
 目前分支查看
+
+git branch -a
+查看全部分支
 
 git branch <branch>
 新增分支
