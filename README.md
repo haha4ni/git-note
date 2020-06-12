@@ -99,6 +99,10 @@ git branch -d <branch>
 git remote add origin https://github.com/haha4ni/GitNote.git
 加入一個遠端的節點，origin 是遠端資料庫的代名詞，指的是後面那串 GitHub 伺服器的位置
 取什麼名字都沒關係
+
+git remote rm origin
+想要修改就先移除
+
 ```
 
 ### GitHab相關設定
