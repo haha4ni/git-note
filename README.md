@@ -57,6 +57,11 @@ git pull
 
 pull等於兩個指令
 git fetch + git merge origin/master
+
+
+commit退回
+git reset --hard ae5244a8
+--hard 強制
 ```
 
 
