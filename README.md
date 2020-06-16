@@ -64,6 +64,9 @@ git fetch + git merge origin/master
 ### 分支處理
 ```C++
 git checkout <branch>
+
+-f or --force 強拉下來
+
 切換分支
 git checkout -b <branch>
 -b : 如果沒有就創建新分支+進入
