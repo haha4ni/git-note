@@ -51,17 +51,23 @@ git push origin <local_branch:global_branch>//推上不同分支名稱
 -u : 紀錄要推上去的位置，下次只需要打git push
 ```
 
+
+
+
 #### 更新
 ```C++
 git pull
 
 pull等於兩個指令
 git fetch + git merge origin/master
+```
 
-
-commit退回
+#### 反悔(commit相關操作)
+```
 git reset --hard ae5244a8
 --hard 強制
+
+git reset --hard HEAD 回復到最新提交版本
 ```
 
 
