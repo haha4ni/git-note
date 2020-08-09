@@ -62,6 +62,13 @@ pull等於兩個指令
 git fetch + git merge origin/master
 ```
 
+#### 不追蹤檔案
+```
+git rm -r --cached
+--cached 單純不追蹤 檔案還在
+-r 允許批量刪除(資料夾)
+```
+
 #### 反悔(commit相關操作)
 ```
 git reset --hard ae5244a8
