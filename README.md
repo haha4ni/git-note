@@ -21,6 +21,12 @@ git config --global user.email "email"
 git status
 ```
 
+
+#### 
+``` C++
+git 
+```
+
 -------------------
 ###上傳四大步驟
 #### 初始化
