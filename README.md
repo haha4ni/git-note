@@ -147,4 +147,4 @@ echo "# GitNote" >> README.md
 
 \[1]:  https://gitbook.tw/
 
-[2]:  https://zlargon.gitbooks.io/git-tutorial/content/
+\[2]:  https://zlargon.gitbooks.io/git-tutorial/content/
