@@ -77,10 +77,18 @@ git rm -r --cached
 
 #### 反悔(commit相關操作)
 ```
-git reset --hard ae5244a8
---hard 強制
+git reset <branch_ID>
 
-git reset --hard HEAD 回復到最新提交版本
+git reset --mixed HEAD^
+HEAD : 當下的branch_ID
+^ : 前一個
+
+	
+--mixed 工作目錄-保留 暫存區-丟棄 (預設)
+--soft  工作目錄-保留 暫存區-保留
+--hard  工作目錄-丟棄 暫存區-丟棄
+
+git reset --hard HEAD 回復到前一版本
 ```
 
 
