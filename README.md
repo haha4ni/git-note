@@ -79,7 +79,8 @@ git rm -r --cached
 ```
 git reset <branch_ID>
 
-git reset --mixed HEAD^
+git reset --mixed "HEAD^"
+windows的換行符號是^所以要加""
 HEAD : 當下的branch_ID
 ^ : 前一個
 
