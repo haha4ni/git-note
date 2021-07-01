@@ -26,6 +26,8 @@ git status
 ``` C++
 工作目錄與最新分支差異
 git diff HEAD
+git diff <commit1> <commit2>
+commit id 1舊2新
 ```
 
 -------------------
