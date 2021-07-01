@@ -28,6 +28,8 @@ git status
 git diff HEAD
 git diff <commit1> <commit2>
 commit id 1舊2新
+git diff HEAD^ HEAD
+比較前一版與最新版
 ```
 
 -------------------
