@@ -65,6 +65,12 @@ git status
 git pull
 # pull是兩個指令的結合
 # git fetch + git merge origin/master
+
+git pull --rebase
+# --rebase :
+# git就會用rebase來解conflict, 預設是用merge來合併
+# git fetch oirgin
+# git rebase remotes/github/master
 ```
 
 ### git fetch
@@ -73,6 +79,10 @@ git pull
 git fetch <remote>
 # <remote> : 
 # ex. origin
+
+git fetch --all
+# --all :
+# 更新全部遠端分支
 ```
 
 ### git rm
@@ -102,7 +112,14 @@ git reset --mixed "HEAD^"
 git reset --hard HEAD
 # 回復到前一版本
 ```
+### git push
+```python
+git push
 
+git push -u <remote name> <branch name>
+# -u, --set-upstream
+# 設定 upstream 可以使分支開始追蹤指定的遠端分支
+```
 
 -------------------
 ## 分支處理
@@ -121,6 +138,15 @@ git checkout -f <branch>
 git checkout -b <branch>
 # -b :
 # 如果沒有此分支就創建新分支+進入
+
+git checkout <origin/new_branch> -b <new_branch>
+# 建立 local new_branch 並與遠端連接
+
+git checkout -t <remote_branch>
+# -t, --track :
+# set upstream info for new branch
+# 自動建立一個與遠端同名的local branch，並以此local branch追蹤remote branch
+# 沒加上-t參數，則會出現Git HEAD detached的情況。
 ```
 
 ### git branch
@@ -150,40 +176,6 @@ git merge <branch>
 
 git branch -d <branch>
 # 刪除分支
-
-
-```
-
-```
-
-git checkout origin/new_branch -b new_branch 
-# 建立 local new_branch 並與遠端連接
-```
-
-```C++
-usage: git checkout [<options>] <branch>
-   or: git checkout [<options>] [<branch>] -- <file>...
-
-    -q, --quiet           suppress progress reporting
-    -b <branch>           create and checkout a new branch
-    -B <branch>           create/reset and checkout a branch
-    -l                    create reflog for new branch
-    --detach              detach the HEAD at named commit
-    -t, --track           set upstream info for new branch
-    --orphan <new-branch>
-                          new unparented branch
-    -2, --ours            checkout our version for unmerged files
-    -3, --theirs          checkout their version for unmerged files
-    -f, --force           force checkout (throw away local modifications)
-    -m, --merge           perform a 3-way merge with the new branch
-    --overwrite-ignore    update ignored files (default)
-    --conflict <style>    conflict style (merge or diff3)
-    -p, --patch           select hunks interactively
-    --ignore-skip-worktree-bits
-                          do not limit pathspecs to sparse entries only
-    --ignore-other-worktrees
-                          do not check if another worktree is holding the given ref
-    --progress            force progress reporting
 ```
 
 -------------------
@@ -206,24 +198,27 @@ pull 取得遠端數據庫的內容
 
 -------------------
 ## 遠端設定
-```C++
+```python
 git remote add origin https://github.com/haha4ni/GitNote.git
-加入一個遠端的節點，origin 是遠端資料庫的代名詞，指的是後面那串 GitHub 伺服器的位置
-取什麼名字都沒關係
+# 加入一個遠端的節點，origin 是遠端資料庫的代名詞，指的是後面那串 GitHub 伺服器的位置
+# 取什麼名字都沒關係
 
 git remote rm origin
-想要修改就先移除
+# 想要修改就先移除
 ```
 
 -------------------
 ## 功能指令
 
-### 內建圖形化分支工具
+### gitk
+內建圖形化查看工具
 ``` C++
 gitk  (只顯示自己)
 gitk --all  (顯示全部)
 ```
-### 設定使用者名稱與Email
+
+### git config
+設定使用者名稱與Email
 ``` C++
 $ git config user.name
 
@@ -234,7 +229,7 @@ git config --global user.email "email"
 ```
 
 ### 
-``` C++
+```python
 工作目錄與最新分支差異
 git diff HEAD
 git diff <commit1> <commit2>
@@ -258,9 +253,10 @@ echo "# GitNote" >> README.md
 
 -------------------
 ### Reference
+\[1] : [Git - Reference](https://git-scm.com/)
 
-\[1] : https://gitbook.tw/
+\[2] : [為你自己學 Git](https://gitbook.tw/)
 
-\[2] : https://git-scm.com/docs
+\[3] : [簡介 · Git](https://zlargon.gitbooks.io/git-tutorial/content/)
 
-\[3] : https://zlargon.gitbooks.io/git-tutorial/content/
+\[4] : [連猴子都能懂的Git入門指南](https://backlog.com/git-tutorial/tw/)
