@@ -119,6 +119,18 @@ git push
 git push -u <remote name> <branch name>
 # -u, --set-upstream
 # 設定 upstream 可以使分支開始追蹤指定的遠端分支
+
+git push origin --delete new_branch 
+# 刪除遠端的 branch
+```
+
+### git stash
+```python
+git stash list
+git stash pop stash@{2}
+git stash apply stash@{0}
+git stash drop stash@{0}
+# pop 指令看成「apply Stash + drop Stash」。
 ```
 
 -------------------
@@ -146,6 +158,7 @@ git checkout -t <remote_branch>
 # -t, --track :
 # set upstream info for new branch
 # 自動建立一個與遠端同名的local branch，並以此local branch追蹤remote branch
+# ex : git checkout --track origin/develop
 # 沒加上-t參數，則會出現Git HEAD detached的情況。
 ```
 
@@ -209,6 +222,8 @@ git remote rm origin
 
 -------------------
 ## 功能指令
+### git --version
+查看版本
 
 ### gitk
 內建圖形化查看工具
@@ -219,29 +234,31 @@ gitk --all  (顯示全部)
 
 ### git config
 設定使用者名稱與Email
-``` C++
-$ git config user.name
+```python
+git config --list
 
+$ git config user.name
 $ git config user.email
 
 git config --global user.name "name"
 git config --global user.email "email"
 ```
 
-### 
+### git diff
 ```python
-工作目錄與最新分支差異
+
 git diff HEAD
+# 工作目錄與最新分支差異
 git diff <commit1> <commit2>
-commit id 1舊2新
+# commit id 1舊2新
 git diff HEAD^ HEAD
-比較前一版與最新版
+# 比較前一版與最新版
 ```
 
 
 -------------------
 ## GitHab相關設定
-
+### SSH Key
 
 
 -------------------
@@ -260,3 +277,5 @@ echo "# GitNote" >> README.md
 \[3] : [簡介 · Git](https://zlargon.gitbooks.io/git-tutorial/content/)
 
 \[4] : [連猴子都能懂的Git入門指南](https://backlog.com/git-tutorial/tw/)
+
+\[5] : [Summer。桑莫。夏天](https://cythilya.github.io/2018/04/05/git/)
