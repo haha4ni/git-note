@@ -141,7 +141,7 @@ git stash drop stash@{0}
 進入指定分支
 ```python
 git checkout <branch>
-
+#會自動下-t 以及從遠端拉取相對應的branch
 
 git checkout -f <branch>
 # -f or --force :
