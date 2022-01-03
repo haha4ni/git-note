@@ -253,6 +253,9 @@ git diff <commit1> <commit2>
 # commit id 1舊2新
 git diff HEAD^ HEAD
 # 比較前一版與最新版
+
+git diff --relative > change.patch
+# 只patch當前的工作目錄
 ```
 
 
