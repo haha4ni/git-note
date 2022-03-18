@@ -190,6 +190,16 @@ git merge <branch>
 
 git branch -d <branch>
 # 刪除分支
+
+
+git.exe checkout --no-track -b D13_AIO_Dakar remotes/origin/D13_AIO_Dakar
+不追蹤分支給remote
+
+git branch -vv
+檢查分支追蹤誰(配合遠端用)
+
+git branch -u <remote/branch>
+
 ```
 
 -------------------
