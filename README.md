@@ -193,13 +193,13 @@ git branch -d <branch>
 
 
 git.exe checkout --no-track -b D13_AIO_Dakar remotes/origin/D13_AIO_Dakar
-不追蹤分支給remote
+#不追蹤分支給remote
 
 git branch -vv
-檢查分支追蹤誰(配合遠端用)
+#檢查分支追蹤誰(配合遠端用)
 
 git branch -u <remote/branch>
-
+#給當前的本地端分支追蹤遠端分支
 ```
 
 -------------------
