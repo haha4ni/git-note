@@ -238,10 +238,13 @@ git remote rm origin
 
 ### gitk
 內建圖形化查看工具
-``` C++
+```Python
 gitk  (只顯示自己)
 gitk --all  (顯示全部)
 ```
+
+### git reflog
+版本日誌
 
 ### git config
 設定使用者名稱與Email
