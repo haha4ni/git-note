@@ -126,12 +126,23 @@ git push origin --delete new_branch
 ```
 
 ### git stash
+把目前編輯中的檔案(尚未commit階段)放入暫存區，並回復到還沒修改前的commit
 ```python
+git stash
+
 git stash list
-git stash pop stash@{2}
-git stash apply stash@{0}
-git stash drop stash@{0}
+# 來查看所有被 stash 的內容
+
+git stash pop
+# 把暫存的檔案叫回來
+# FIFO (編號0為第一組)
 # pop 指令看成「apply Stash + drop Stash」。
+
+git stash drop
+# 丟棄暫存的檔案
+
+git stash clear
+# 一次清空 stash list 裡面所有的 stash
 ```
 
 -------------------
@@ -233,7 +244,7 @@ git remote rm origin
 
 -------------------
 ## 功能指令
-### git --version
+### git version
 查看版本
 
 ### gitk
