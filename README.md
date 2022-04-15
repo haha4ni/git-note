@@ -297,8 +297,8 @@ ssh-keygen
 來到 GitHub，並打開右上角個人圖示的選單，選擇底下的 Settings 選項。
 再選擇左側選項中的 SSH and GPG keys 選項。
 
-Public key (公鑰) 預設是儲存在 /home/userName/.ssh/id.rsa.pub 這個檔案內
-Private key (私鑰) 預設則是儲存再 /home/userName/.ssh/id.rsa 這個檔案內
+Public key (公鑰) 預設是儲存在 /home/userName/.ssh/id.rsa.pub 這個檔案內  
+Private key (私鑰) 預設則是儲存再 /home/userName/.ssh/id.rsa 這個檔案內  
 
 -------------------
 ## CMD指令補帖
