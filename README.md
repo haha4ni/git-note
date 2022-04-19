@@ -256,6 +256,7 @@ gitk --all  (顯示全部)
 
 ### git reflog
 版本日誌
+搭配reset --hard可以退回版本
 
 ### git config
 設定使用者名稱與Email
