@@ -11,6 +11,10 @@
 4. 上傳至遠端儲存庫 (push)
 5. 從遠端儲存庫更新至本地儲存庫 (pull)
 
+
+-------------------
+
+
 ### 建立存儲庫
 使用`init`來建立新環境
 ```python
@@ -231,6 +235,26 @@ pull 取得遠端數據庫的內容
 之後須自行修改內容再add一次以解除衝突
 ```
 
+
+## 地基處理
+### git rebase
+```python
+git rebase -i <commit base>
+
+任務一：調整 commit 順序
+任務二：刪除 commit
+drop 
+任務三：修改 message
+reword 
+任務四：合併 commit
+squash
+任務五：拆分 commit
+edit 
+
+
+```
+
+
 -------------------
 ## 遠端設定
 ```python
@@ -319,3 +343,5 @@ echo "# GitNote" >> README.md
 \[4] : [連猴子都能懂的Git入門指南](https://backlog.com/git-tutorial/tw/)
 
 \[5] : [Summer。桑莫。夏天](https://cythilya.github.io/2018/04/05/git/)
+
+\[6] : [使用 Git rebase 來整理你的 commit 吧！](https://medium.com/starbugs/use-git-interactive-rebase-to-organize-commits-85e692b46dd)
