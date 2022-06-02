@@ -333,6 +333,16 @@ echo "# GitNote" >> README.md
 ```
 
 -------------------
+Gerrit
+
+## git push
+```
+上傳至伺服器進行code review而後才merge
+git push origin HEAD:refs/for/(branch)
+```
+
+
+-------------------
 ### Reference
 \[1] : [Git - Reference](https://git-scm.com/)
 
