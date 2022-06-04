@@ -64,7 +64,6 @@ git push -u origin <local_branch>
 ```python
 git status
 ```
-
 ### git pull
 ```python
 git pull
@@ -117,6 +116,13 @@ git reset --mixed "HEAD^"
 git reset --hard HEAD
 # 回復到前一版本
 ```
+
+### git commit
+```python
+git commit --amend
+# 修改註解
+```
+
 ### git push
 ```python
 git push
