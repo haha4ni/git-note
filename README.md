@@ -314,6 +314,17 @@ git diff --relative > change.patch
 # 只patch當前的工作目錄
 ```
 
+### git tag
+```
+# 快速建立
+git tag <tag-name>
+
+# 追加comment
+git tag -a <tag> -m <comment>
+
+# 為其中一條追加tag
+git tag -a <tag> <SHA-256>
+```
 
 -------------------
 ## GitHab相關設定
@@ -325,11 +336,13 @@ ssh-keygen
 ```
 
 2.上傳金鑰（id_rsa.pub）
-來到 GitHub，並打開右上角個人圖示的選單，選擇底下的 Settings 選項。
+來到 GitHub，並打開右上角個人圖示的選單，選擇底下的 Settings 選項。  
 再選擇左側選項中的 SSH and GPG keys 選項。
 
 Public key (公鑰) 預設是儲存在 /home/userName/.ssh/id.rsa.pub 這個檔案內  
 Private key (私鑰) 預設則是儲存再 /home/userName/.ssh/id.rsa 這個檔案內  
+
+* Gerrit只接受Putty Build出來的金鑰  
 
 -------------------
 ## CMD指令補帖
